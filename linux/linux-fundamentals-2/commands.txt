@@ -1,0 +1,13 @@
+# Permissions
+ls -l
+chmod +x script.sh
+chmod 755 myfile.txt
+chmod u+x file.sh
+
+# Ownership
+chown username:groupname file.txt
+
+# Viewing Info
+whoami
+groups
+id
