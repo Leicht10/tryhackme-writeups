@@ -1,0 +1,10 @@
+# User Security
+net user
+net localgroup administrators
+
+# Defender & Firewall
+control firewall.cpl
+WindowsDefender:
+
+# Remote Access
+mstsc
