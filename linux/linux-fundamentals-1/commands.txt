@@ -1,0 +1,21 @@
+# Basic Navigation
+pwd
+ls -la
+cd /home
+cd ~
+
+# File Management
+touch test.txt
+mkdir new_folder
+rm test.txt
+
+# Viewing Content
+cat /etc/passwd
+less /etc/hosts
+
+# System Info
+whoami
+uname -a
+
+# Permissions
+ls -l
