@@ -1,0 +1,13 @@
+# Processes
+ps aux
+top
+kill -9 [PID]
+
+# Package Management
+sudo apt update
+sudo apt upgrade
+sudo apt install nmap
+
+# Services
+systemctl status ssh
+service apache2 restart
