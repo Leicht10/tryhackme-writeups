@@ -1,0 +1,11 @@
+# System Info
+whoami
+systeminfo
+
+# File Navigation
+dir
+cd C:\Users
+
+# Basic Config
+control
+hostname
