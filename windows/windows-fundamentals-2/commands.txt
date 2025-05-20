@@ -1,0 +1,9 @@
+# Registry
+regedit
+
+# Services
+services.msc
+taskmgr
+
+# Startup Programs
+msconfig
