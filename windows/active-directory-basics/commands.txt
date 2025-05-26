@@ -1,0 +1,15 @@
+# View domain info
+whoami /fqdn
+echo %logonserver%
+net config workstation
+
+# List domain users and groups
+net user /domain
+net group /domain
+
+# List group memberships
+whoami /groups
+
+# Access AD tools (GUI, not CLI)
+dsa.msc          # Active Directory Users and Computers
+gpmc.msc         # Group Policy Management
