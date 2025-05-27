@@ -1,0 +1,23 @@
+# System Info
+whoami
+hostname
+systeminfo
+
+# File Navigation
+dir
+cd C:\Users
+cd ..
+cls
+
+# Networking
+ipconfig /all
+netstat -ano
+
+# Processes
+tasklist
+taskkill /PID 1234 /F
+
+# File Operations
+type secrets.txt
+copy secrets.txt backup.txt
+del backup.txt
