@@ -1,0 +1,31 @@
+# Navigation
+pwd
+ls -la
+cd /etc
+cd ~
+
+# Files
+touch test.txt
+cat test.txt
+nano test.txt
+rm test.txt
+
+# Permissions
+chmod +x script.sh
+chown root:root secret.txt
+
+# System Info
+whoami
+id
+hostname
+uname -a
+
+# Search / Filters
+grep "flag" file.txt
+find / -name "*.conf" 2>/dev/null
+locate passwd
+
+# Processes
+ps aux
+top
+kill -9 1234
