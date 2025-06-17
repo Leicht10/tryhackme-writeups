@@ -1,0 +1,22 @@
+# Basic Help & Discovery
+Get-Help
+Get-Command
+
+# System Info
+Get-Process
+Get-Service
+Get-ComputerInfo
+
+# File System Navigation
+Get-ChildItem
+cd C:\Users
+mkdir test-folder
+Remove-Item test-folder -Recurse
+
+# Script Execution
+Set-ExecutionPolicy RemoteSigned
+.\example.ps1
+
+# Process Management
+Start-Process notepad
+Stop-Process -Name notepad
