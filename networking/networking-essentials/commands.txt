@@ -1,0 +1,25 @@
+# Networking Essentials - Common CLI Commands
+
+# Ping (ICMP)
+ping 8.8.8.8
+ping -c 4 example.com
+
+# Traceroute (Linux) / tracert (Windows)
+traceroute example.com
+tracert example.com
+
+# DNS lookups
+nslookup example.com
+dig example.com
+dig @8.8.8.8 example.com A
+
+# Show local IP / interface info
+ip addr show
+ifconfig
+
+# Route / gateway
+ip route
+route -n
+
+# ARP table
+arp -a
