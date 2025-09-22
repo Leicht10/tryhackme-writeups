@@ -1,0 +1,25 @@
+# Nmap Basics - Useful Scans
+
+# Quick host discovery + port scan (default 1000 ports)
+nmap 192.168.1.10
+
+# Service/version detection
+nmap -sV 192.168.1.10
+
+# TCP SYN (stealth) scan
+nmap -sS 192.168.1.10
+
+# TCP connect scan (if SYN blocked)
+nmap -sT 192.168.1.10
+
+# Scan all ports
+nmap -p- 192.168.1.10
+
+# Aggressive scan (includes -sV, script scan, OS detection)
+nmap -A 192.168.1.10
+
+# Use a script category (example: vuln)
+nmap --script vuln 192.168.1.10
+
+# Output to files (normal, grepable, XML)
+nmap -oN scan.txt -oG scan.gnmap -oX scan.xml 192.168.1.10
