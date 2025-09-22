@@ -1,0 +1,20 @@
+# Tcpdump Basics - Common Commands
+
+# Capture on interface eth0 and print to console
+sudo tcpdump -i eth0
+
+# Capture only traffic to/from a specific host
+sudo tcpdump -i eth0 host 192.168.1.10
+
+# Capture only TCP port 80 (HTTP)
+sudo tcpdump -i eth0 tcp port 80
+
+# Write capture to file (pcap)
+sudo tcpdump -i eth0 -w capture.pcap
+
+# Read pcap and show summary
+tcpdump -r capture.pcap -n -tt
+
+# Use BPF filters examples
+sudo tcpdump -i eth0 'tcp and (port 80 or port 443)'
+sudo tcpdump -i eth0 'net 192.168.1.0/24 and not arp'
