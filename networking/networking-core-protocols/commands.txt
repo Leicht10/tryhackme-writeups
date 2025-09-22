@@ -1,0 +1,18 @@
+# Networking Core Protocols - Useful Commands & Examples
+
+# TCP connection test (netcat / nc)
+nc -vz 192.168.1.10 22       # Verbose connect test to port 22
+nc -lvp 4444                 # Listen for incoming connection on port 4444
+
+# UDP test with nc (some nc builds)
+nc -vzu 192.168.1.10 53
+
+# Show active TCP/UDP sockets (Linux)
+ss -tuln
+netstat -tuln
+
+# ARP requests / resolve
+arping -c 3 192.168.1.1
+
+# ICMP echo + TTL debugging
+ping -t 64 example.com       # set TTL (Windows / some ping variants)
