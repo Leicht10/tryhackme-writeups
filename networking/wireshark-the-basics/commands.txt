@@ -1,0 +1,22 @@
+# Wireshark Basics - Commands & Filters
+
+# Start Wireshark (GUI)
+wireshark &
+
+# Common display filters
+http
+tcp.port == 80
+ip.addr == 192.168.1.10
+tcp.stream eq 0
+dns
+
+# Follow TCP stream (right-click in GUI) -> useful filter applied:
+tcp.stream eq <n>
+
+# Save captured packets to file (pcap) via GUI or tshark:
+tshark -i eth0 -w capture.pcap
+
+# Read capture file with tshark
+tshark -r capture.pcap -V
+
+# Export HTTP objects (GUI) or via tshark/curl for specific streams (advanced)
